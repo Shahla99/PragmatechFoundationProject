@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	}
+
+	.logo img{
+           float: left;
+           width: 200px;
+           height: auto;
+	}
+
+ul{
+	float: left;
+	list-style-type: none;
+}
+
+ul li{
+       display: inline-block;
+}
+ ul li{
+text-decoration: none;
+padding: 5px 20px;
+border: 1px;
+
+ }
