@@ -1,7 +1,7 @@
-``````*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  *{ 
+  	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
 
 	}
 
@@ -40,8 +40,10 @@ border: 1px;
 
    }
 
- ul li{
-
-
-
-
+.header .menu ul li a {
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+	line-height:80px;  
+}
