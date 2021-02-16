@@ -1,4 +1,4 @@
-  *{ 
+*{ 
   	 margin: 0;
 	 padding: 0;
 	 box-sizing: border-box;
@@ -47,3 +47,16 @@ border: 1px;
 	padding: 10px;
 	line-height:80px;  
 }
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 12px;
+  border: 2px;
+  cursor: auto;
+  float: right;
+  
+}
+
+
