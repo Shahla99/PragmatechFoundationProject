@@ -1,0 +1,76 @@
+*{ 
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.logo img{
+        float: left;
+        width: 180px;
+        height: auto;
+        border: 1px;
+       
+}
+
+ul{
+float: left;
+list-style-type: none;
+color: white;
+}
+
+ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+ul li{
+text-decoration: none;
+color: rgb(255, 255, 255);
+padding: 5px 20px;
+border: 1px;
+
+}
+.header{
+width: 100%;
+height: 100vh;
+background-color: rgb(0, 0, 0);
+}
+.logo{
+width: 100%;
+height: 100vh;
+border: 1px ;
+background-color: rgb(0, 0, 0);
+
+}
+
+.header .menu ul li a {
+color: white;
+display: inline-block;
+list-style-type: none;
+text-decoration: none;
+padding: 10px;
+line-height:100px;  
+}
+
+button {
+background-color: black;
+color: white;
+padding: 14px 20px;
+margin: 12px;
+border: 2px;
+cursor: auto;
+float: right;
+line-height: 70px;
+
+}
+
+.navbar-search{
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  padding-right: 11px 21px;
+  margin: 10px;
+  line-height: 100px;
+  float: right;
+  position: center 70px;
+}
