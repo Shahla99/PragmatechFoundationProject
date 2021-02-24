@@ -7,10 +7,12 @@ box-sizing: border-box;
 
 .logo img{
         float: left;
-        width: 180px;
-        height: auto;
+        width: 350px;
+        height: 100px;
+        padding:38px;
         border: 1px;
-        padding-top: 30px;
+        padding-top: inherit;
+        margin-top: 29px;
        
 }
 
@@ -24,22 +26,24 @@ ul li{
     display: inline-block;
     position: relative;
     text-decoration: none;
-    margin-top: 10px;
+    padding-top: 1px;
     margin-left: 10px;
-    margin-right: 35px; 
+    margin-right: 40px; 
+    
 }
 ul li{
 text-decoration: none;
 color: rgb(255, 255, 255);
-padding: 5px 20px;
+padding: 7px;
 border: 1px;
 
 }
 .header{
 width: 100%;
 height: 100vh;
-background-color: rgb(0, 0, 0);
+background-color: #212121;
 }
+
 .logo{
 width: 100%;
 height: 100vh;
@@ -51,22 +55,29 @@ padding-top: 30px;
 
 .header .menu ul li a {
 color: white;
-display: inline-block;
+display: flex;
+font-family:ps commons,sans-serif ;
+font-size: 16px;
+font-weight: 700;
 list-style-type: none;
 text-decoration: none;
 padding: 10px;
-line-height:100px;  
+line-height:90px;  
 }
 
 button {
 background-color: black;
 color: white;
-padding: 14px 20px;
-margin: 12px;
+font-family:ps commons,sans-serif ;
+font-size: 16px;
+font-weight: 700;
+padding: 14px 30px;
+margin: 10px;
 border: 2px;
 cursor: auto;
 float: right;
 line-height: 70px;
+white-space: nowrap;
 
 }
 .navbar{
@@ -87,6 +98,7 @@ overflow:auto;
 }
 
 /*slider section styles*/
+
 #slider{
   height: 1300px;
   border: 1px;
@@ -96,9 +108,44 @@ overflow:auto;
 background-image: url(./img/plural.jpg);
 padding-top: 40px;
 width: 100%;
-height: 900px;
+height: 800px;
 display: block;
 position: absolute;
 background-repeat: no-repeat;
 background-position: center;
+}
+
+.slider-content{
+  width: 1350px;
+  margin: 0px auto;
+ 
+}
+
+
+
+.path-container{
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  line-height: 10px;
+  background-color: black;
+  background-size: cover;
+  
+}
+
+.path-row{
+  display: flex;
+  text-decoration: none;
+  text align: center;
+  position: relative;
+  color: white;
+  margin: 10px 0px;
+  border: 1px solid red;
+  padding-top: 60px;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-direction: column;
+ 
+  
 }
