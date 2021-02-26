@@ -100,7 +100,7 @@ overflow:auto;
 /*slider section styles*/
 
 #slider{
-  height: 1300px;
+  height: 695px;
   border: 1px;
 }
 
@@ -109,7 +109,8 @@ background-image: url(./img/plural.jpg);
 padding-top: 40px;
 width: 100%;
 height: 800px;
-display: block;
+display: flex;
+align-items: center;
 position: absolute;
 background-repeat: no-repeat;
 background-position: center;
@@ -118,34 +119,40 @@ background-position: center;
 .slider-content{
   width: 1350px;
   margin: 0px auto;
- 
-}
 
-
-
-.path-container{
-  display: inline-block;
-  width: 100%;
-  height: 100vh;
-  margin: 0px auto;
-  line-height: 10px;
-  background-color: black;
-  background-size: cover;
   
+ }
+
+ /*path section styles*/
+
+#path{
+  height: 1000px;
+  background-color:black;
+  background size: cover;
 }
 
-.path-row{
+path-row{
+  margin: 0 -5px;
   display: flex;
-  text-decoration: none;
-  text align: center;
-  position: relative;
-  color: white;
-  margin: 10px 0px;
-  border: 1px solid red;
-  padding-top: 60px;
-  justify-content: space-between;
+  flex-basis: 50%;
   flex-grow: 1;
-  flex-direction: column;
- 
-  
+  clear: both;
 }
+ 
+.column {
+  float: left;
+  margin: 20px;
+  width: 35%;
+  padding: 20px 30px;
+  box-shadow: 0px 30px 30px rgb(0 0 0 / 10%);
+  min-height: 165px;
+  border: 1px solid red;
+}
+
+
+
+
+
+
+
+ 
