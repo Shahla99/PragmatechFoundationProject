@@ -159,23 +159,25 @@ path-row{
   clear: both;
 }
 
-.path-row .column{
+.path-row .col1{
   max-width: 385px;
   
 }
  
-.column {
+.col1 {
   float: left;
   margin: 20px;
   width: 31%;
   position: relative;
   padding: 20px 30px;
   min-height: 165px;
-  border: 1px solid black ;
+  border: 1px solid black;
   
 
 }
- .path-items .column p{
+
+
+ .path-items .col1 p{
 
   color: white;
   line-height: 19px;
@@ -186,7 +188,7 @@ path-row{
 
 }
 
-.path-items .column .path-icon {
+.path-items .col1 .path-icon {
   width: 200px;
   height: auto;
   position:absolute;
@@ -199,14 +201,54 @@ path-row{
 }
 
 
-.title-section .title-1 h5 {
 
-  width: 100%;
+.col2{
+  float: left;
+  margin: 0px;
+  width: 30%;
+  position: relative;
+  padding: 20px 25px;
+  min-height: 165px;
+  
 
 
 }
+ .col2 .title-section 
+{
+  position:relative;
+  margin: 20px;
+  padding: 20px 30px;
+  left:900px;
+  top: 200px;
+  margin-top: -10px;
+  color:white;
+  border: 1px;
+  
+}
 
+.col2  .title-section .pink-title 
+{
+  color:#ec008c;
+  font-family: 'PS Commons Bold';
+  font-weight: normal !important;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
 
+.col2 .title-section .white-title{
+  color: white;
+  font-family: 'PS Commons Bold';
+  font-weight: normal !important;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
 
+.col2 .title-section a{
+  color: inherit;
+  font-family: 'PS Commons Bold';
+  font-weight: normal !important;
+  font-size: 18px;
+
+}
 
 
