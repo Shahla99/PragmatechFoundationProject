@@ -149,9 +149,10 @@ background-position: center;
   cursor: pointer;
 }
 
-
-path-row{
-  box-shadow: grey;
+.path-container{
+  box-shadow: 0px 30px 30px rgb(0, 0, 0/10%);
+}
+.path-row{
   margin: 0 -5px;
   display: flex;
   flex-basis: 50%;
@@ -209,16 +210,18 @@ path-row{
   position: relative;
   padding: 20px 25px;
   min-height: 165px;
+  letter-spacing: 1px;
   
 
 
 }
  .col2 .title-section 
 {
+  display: block;
   position:relative;
-  margin: 20px;
-  padding: 20px 30px;
-  left:900px;
+  margin: 30px;
+  padding: 30px 40px;
+  left:800px;
   top: 200px;
   margin-top: -10px;
   color:white;
@@ -228,6 +231,7 @@ path-row{
 
 .col2  .title-section .pink-title 
 {
+  margin: 0px 0px 20px;
   color:#ec008c;
   font-family: 'PS Commons Bold';
   font-weight: normal !important;
@@ -239,16 +243,24 @@ path-row{
   color: white;
   font-family: 'PS Commons Bold';
   font-weight: normal !important;
-  font-size: 27px;
+  font-size: 30px;
   letter-spacing: 1px;
+  margin: 0px 0px 20px;
 }
 
 .col2 .title-section a{
   color: inherit;
-  font-family: 'PS Commons Bold';
+  width: 30px;
+  font-family: 'PS Commons';
   font-weight: normal !important;
   font-size: 18px;
-
+  line-height: 1.5; 
+  margin: 0px 0px 20px;
+  margin-bottom: 20px;
+  text-rendering: optimizeLegibility;
 }
+   
 
-
+  .path-courses{
+    color: #eee;
+  }
