@@ -190,11 +190,11 @@ background-position: center;
 }
 
 .path-items .col1 .path-icon {
-  width: 200px;
+  width: 180px;
   height: auto;
   position:absolute;
-  left:250px;
-  top: -80px;
+  left:150px;
+  top: -60px;
   margin-top: 30px;
   border: none;
   flex-direction:column;
@@ -263,4 +263,43 @@ background-position: center;
 
   .path-courses{
     color: #eee;
+  }
+
+  /*block section styles*/
+
+  #block{
+    height: 770px;
+    border: 1px;
+    background-color: black;
+  }
+
+  .block-items{
+   width: 100%;
+   height: 1500px;
+   display: flex;
+   align-items: center;
+   position: absolute;
+   background-repeat: no-repeat;
+   background-position: center;
+  }
+   
+  #block .block-items .image img {
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin: 0px 0px 0px 57.1354px;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 20px;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  .text h6{
+    font-family: 'PS Commons Bold';
+    font-weight: normal !important;
+    font-size: 15px;
+    margin: 0px 0px 20px;
+    color: white;
+    margin-top: 20px;
+
   }
