@@ -140,7 +140,8 @@ background-position: center;
   background size: cover;
 }
 
-.path-items{
+#path .path-items{
+  height: 700px;
   font-size: .900em;
   font-family: gotham ssm a,gotham ssm b,sans-serif;
   font-weight: 700;
@@ -268,18 +269,19 @@ background-position: center;
   /*block section styles*/
 
   #block{
-    height: 770px;
+    height: 1000px;
     border: 1px;
     background-color: black;
+    background size: cover;
   }
 
   .block-items{
    width: 100%;
-   height: 1500px;
+   height: 960px;
    display: flex;
    align-items: center;
    position: absolute;
-   margin-top: 50px;
+   margin-top: 280px;
    background-repeat: no-repeat;
    background-position: center;
   }
@@ -293,7 +295,7 @@ background-position: center;
     max-height: 20px;
     height: auto;
     vertical-align: middle;
-    
+    position: absolute;
   }
 
   .text h6{
@@ -302,7 +304,7 @@ background-position: center;
     font-size: 16px;
     margin: 0 0 20px 0;
     color: white;
-    margin-top: -20px;
+    margin-top: 0px;
     line-height: 1.2;
     position: absolute;
     left: 140px;
@@ -324,9 +326,9 @@ background-position: center;
     font-weight: 900;
     font-size: 27px;
     padding: 20px;
-    position: relative;
+    position: absolute;
     margin: 0 0 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     color: white;
     letter-spacing: 1px;
 
@@ -338,8 +340,33 @@ background-position: center;
     color: white;
     font-family: 'PS Commons Bold';
     font-size: 18px;
-    padding: 20px;
+    padding: 90px;
     margin: 0 0 20px;
-    margin-top: 30px;
-    line-height: 1.4;
+    margin-top: 20px;
+    line-height: 1.2;
+    position: absolute;
+    left: -70px;
   }
+
+   .content-clearbox .generic-blocks {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 600px;
+    right: 0;
+    float: right;
+    margin-top: 60px;
+
+     }
+
+     .content-clearbox .generic-blocks img{
+      display: inline-block;
+      max-width: 100%;
+      width: 700px;
+       height: 500px;
+       padding: 30px;
+       margin: 0px;
+       margin-top: 180px;
+       left: 200px;
+       cursor: zoom-in;
+     }
