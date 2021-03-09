@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #Translator ve assembler nədir? 
 
+=======
+>>>>>>> cb140c357246b4f3cfb6a0df9b113404960bb26a
 -Proqram dilini kompüterin başa düşdüyü maşın dilinə çevirmək üçün translyatorlardan və kompilyatorlardan istifadə edilir  Translyatorlar - mənbə kodunu obyekt koduna çevirən bir proqramdır. 
 Translator-tərcüməçi
 Compiler-tərtibatçı 
