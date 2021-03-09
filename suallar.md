@@ -1,4 +1,5 @@
-#Translator ve assembler nədir? Compiler və interpreter ilə aralarındakı fərqlər nələrdir? 
+#Translator ve assembler nədir? 
+
 -Proqram dilini kompüterin başa düşdüyü maşın dilinə çevirmək üçün translyatorlardan və kompilyatorlardan istifadə edilir  Translyatorlar - mənbə kodunu obyekt koduna çevirən bir proqramdır. 
 Translator-tərcüməçi
 Compiler-tərtibatçı 
