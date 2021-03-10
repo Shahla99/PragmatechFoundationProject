@@ -23,6 +23,7 @@
 
 -1963-cü ildə mətn tipli informasiyanın kodlaşdırılması üçün ASCII standartı American Standard Code for Information Interchange qəbul edilmişdir.
 =======
+<<<<<<< HEAD
 
 
 4. Type Conversion ya da Type Casting nədir?
@@ -38,6 +39,8 @@
 
 
 
+=======
+>>>>>>> 251ba4d3597483015ea2e6fe50f13e9728e57a6d
 
 
  
