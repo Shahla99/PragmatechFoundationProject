@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -22,3 +23,21 @@
 -ASCİİ (American Standard Code for Information Interchange)-İnformasiya mübadiləsi üçün Amerika Standart Kodu- ingilis əlifbası əsasında yaradılan simvol encoding sxemidir. Müasir simvol encoding sxemlərinin çoxu ASCİİ əsasında yaradılmışdır.
 
 -1963-cü ildə mətn tipli informasiyanın kodlaşdırılması üçün ASCII standartı American Standard Code for Information Interchange qəbul edilmişdir.
+=======
+#Translator ve assembler nədir? 
+-Proqram dilini kompüterin başa düşdüyü maşın dilinə çevirmək üçün translyatorlardan və kompilyatorlardan istifadə edilir  Translyatorlar - mənbə kodunu obyekt koduna çevirən bir proqramdır. 
+Translator-tərcüməçi
+Compiler-tərtibatçı 
+Assembler- translyatorun bir növü sayılır. aşağı səviyyəli bir proqramlaşdırma dilidir. Aşağı səviyyəli proqramlaşdırma dilləri insan dilinə daha az bənzəyir və bir baxışdan başa düşülməsi daha çətindir
+
+#Butun proqramlasdirma dillerinde ortaq istifade olunan data tipleri hansilardir ve qisaca izahatini yazin
+-Data tipləri, müəyyənləşdirmə, tətbiq etmə və istifadənin müxtəlif yollarını təklif edən tip sistemlərində istifadə olunur. Fərqli tip sistemlər müxtəlif dərəcə tipli təhlükəsizlik təmin edir. Demək olar ki, bütün proqramlaşdırma dilləri açıq şəkildə data anlayışını ehtiva edir, baxmayaraq ki, fərqli dillər fərqli terminologiyadan istifadə edə bilər.Ümumi data tiplərinə aşağıdakılar daxildir:
+*Integer.
+*Floating-point number.
+*Character.
+*String.
+*Boolean.
+
+
+
+>>>>>>> d3cbe2d98a533141fa4a777fcc6f47e702a6b9e1
