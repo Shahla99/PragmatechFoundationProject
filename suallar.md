@@ -19,11 +19,10 @@
  
  
  3. Reqem ve ededlerin 2 li say sistemine tercume olunmasi bilirik.Bes hərflər ve simvollar binary code-a nece tercume olunur?
--ASCİİ (American Standard Code for Information Interchange)-İnformasiya mübadiləsi üçün Amerika Standart Kodu- ingilis əlifbası əsasında yaradılan simvol encoding sxemidir. Müasir simvol encoding sxemlərinin çoxu ASCİİ əsasında yaradılmışdır.
+-ASCİİ (American Standard Code for Information Interchange)
+-İnformasiya mübadiləsi üçün Amerika Standart Kodu- ingilis əlifbası əsasında yaradılan simvol encoding sxemidir. Müasir simvol encoding sxemlərinin çoxu ASCİİ əsasında yaradılmışdır.
 
 -1963-cü ildə mətn tipli informasiyanın kodlaşdırılması üçün ASCII standartı American Standard Code for Information Interchange qəbul edilmişdir.
-=======
-<<<<<<< HEAD
 
 
 4. Type Conversion ya da Type Casting nədir?
