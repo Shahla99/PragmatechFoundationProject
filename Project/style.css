@@ -2,6 +2,7 @@
   --primary-color:#000000 ;
 }
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -81,19 +82,18 @@ body {
  }
  
 
-  button {
+  .button {
   background-color: var(--primary-color);
   color: white;
   font-family: ps commons,sans-serif;
   font-size: 15px;
   font-weight: 500;
-  padding: 20px 30px;
-  margin: 10px;
+  padding:5px 10px;
   border: 1px;
   cursor: auto;
   position: absolute;
-  top: 18px;
-  right: 0;
+  right: 15px;
+
   
   }
 
@@ -105,7 +105,7 @@ body {
     right: 120px;
     top: 40px;
   }
-
+  
   .sticky {
     position: fixed;
     top: 0;
@@ -388,6 +388,53 @@ body {
   top: -15px;
   left: 40px
 }
+
+/* Sign in */
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#right {
+  flex: 1;
+}
+
+
+#signin {
+  background:var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+#signin label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.signin-logo img {
+  height: 300px;
+  width: 350px;
+  margin-bottom: 8vh;
+}
+#signin form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
 
 /* Beginners */
 #beginners-slider {
