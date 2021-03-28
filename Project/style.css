@@ -511,14 +511,76 @@ body {
     font-size: 38px;
     line-height: 100%;
     text-transform: none;
+    font-family: 'Libre Baskerville', serif;
   }
   
   .beginner-text p{
     position: relative;
     top: 40px;
     font-size: 18px;
+    font-family:'Libre Baskerville', serif; 
+   
   
+  } 
+  .button3 {
+    padding: 0.8rem 3rem;
+    height: 2.7rem;
+    color: #ec008c;
+    border: 1px solid #ec008c;
+    border-radius: 2px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
   }
+
+.button3 {
+  position: relative;
+  right: 240px;
+  top: 180px;
+}
+
+/* PRO */
+
+#pro-slider {
+  height: 500px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.pro-item {
+  background-image: url(../Project/img/nw_background.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  }
+
+  .pro-text {
+    position: absolute;
+    top: 170px;
+    right: -1px;
+    color: #ffffff;
+  }
+  
+  .pro-text h1 {
+    font-size: 38px;
+    line-height: 100%;
+    text-transform: none;
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  .pro-text p{
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+    font-family:'Libre Baskerville', serif; 
+   
+  } 
+
+  /* LOGIN HTML */
 
   #wrapper {
     display: flex;
