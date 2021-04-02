@@ -540,18 +540,54 @@ body {
   right: 240px;
   top: 180px;
 }
+/* Learning */
 #learning {
-  height:500px;
   background-color: #181818;
-  padding-bottom: 100px;
-  color: #fff;
+  padding-bottom: 100px; 
+  height: 200px;
 }
-.course-highlight h3{
+#learning ul {
+  margin-left: 0;
+}
+#learning .course-highlight h3{
+color: white;
 font-weight: 500;
 font-size: 18px;
-color: #fff;
 letter-spacing: 1px;
-margin-bottom: 15px; }
+margin-bottom: 15px;
+margin-top: 10px; }
+
+#learning .course-highlight{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+#learning .course-highlight ul {
+  column-gap: 50px;
+  column-count: 3;
+  -webkit-column-break-inside: avoid;
+}
+
+#learning ul li {
+  color: #aaa;
+  padding-left: 0;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 15px;
+  list-style-type: disc;
+  margin-left: 18px;
+}
+
+
+.learning  ul li {
+  column-gap: 50px;
+  column-count: 3;
+  -webkit-column-break-inside: avoid;
+  list-style: none;
+}
+
 
   /* LOGIN HTML */
 
