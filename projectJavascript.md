@@ -1,4 +1,4 @@
-##Slider
+## Slider
 1. Slider-container icherisinde slide-image onun icherisine shekilleri daxil edirik. 
 2. Css de stilleri veririk 
 3. index 0 yaziriq 
