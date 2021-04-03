@@ -13,3 +13,20 @@ function stickyNavigation() {
 }
 
 window.addEventListener('scroll', stickyNavigation); 
+
+//slider
+
+var slideIndex = 0;
+Myslider();
+
+function Myslider() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = +1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(Myslider, 2000);
+}
