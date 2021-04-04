@@ -16,4 +16,4 @@ kod her defe yerine yetirilende bir deyer artir (oz-ozune prev,next buttonlari y
   x[slideIndex-1].style.display = "block"; 
 sonuncu slide chatdiqdan sonra yene birinciye qayitsin deye 
 6. setTimeout(Myslider, 2000);
-} setTimeout ise mueyyen saniye sonra funksiya icra olunsun deye 
+} setTimeout ise mueyyen saniye sonra funksiya icra olunsun deye  
