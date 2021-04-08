@@ -28,5 +28,5 @@ function Myslider() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = +1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(Myslider, 3000);
+  setTimeout(Myslider, 2000);
 }

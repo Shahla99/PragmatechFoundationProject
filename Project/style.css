@@ -70,6 +70,8 @@ body {
  .navbar ul  {
   display: flex;
   padding-top: inherit;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
  }
 
  .navbar .nav-logo {
@@ -85,7 +87,8 @@ body {
   .button {
   background-color: var(--primary-color);
   color: white;
-  font-family: ps commons,sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 500;
   padding:5px 10px;
@@ -188,8 +191,9 @@ body {
 }
 
 .slider-text h1 {
-  font-size: 38px;
-  font-family:  'Libre Baskerville', serif;
+  font-size: 35px;
+  font-family: 'PS Commons Bold';
+  font-weight: 300px;
   line-height: 100%;
   text-transform: none;
 }
@@ -199,11 +203,15 @@ body {
   padding: 10px;
   top: 30px;
   right: 15px;
-  font-size: 18px;
-  font-family:  'Libre Baskerville', serif;
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #858585;
+  
 
 
 }
+
 
 
   .button1{
@@ -284,12 +292,14 @@ body {
 .col {
   float: left;
   margin: 35px;
+  margin-top: 45px;
   width: 31%;
   position: relative;
   padding: 20px 30px;
   min-height: 165px;
   border: 1px;
   background: #222222;
+
   
 
 }
@@ -311,7 +321,7 @@ body {
   position:absolute;
   right: -25px;
   top: -70px;
-  margin-top: 30px;
+  margin-top: 40px;
   border: none;
   flex-direction:column;
   vertical-align: middle;
@@ -335,7 +345,7 @@ body {
 
 .title-section .pink-title 
 {
-  margin: 0;
+  margin: 10px;
   color:#ec008c;
   font-family: 'PS Commons Bold';
   font-weight: 300px;
