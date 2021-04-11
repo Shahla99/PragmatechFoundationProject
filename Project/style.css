@@ -543,6 +543,30 @@ body {
    
   
   } 
+
+  .learn-text{
+    position: absolute;
+    top: 150px;
+    left: 90px;
+    color: #ffffff;
+  }
+
+  .learn-text h1 {
+    font-size: 38px;
+    line-height: 100%;
+    text-transform: none;
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .learn-text p{
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+    font-family:'Libre Baskerville', serif; 
+   
+  
+  } 
+  
    .course-item .button4 {
     padding: 0.8rem 3rem;
     height: 2.7rem;
