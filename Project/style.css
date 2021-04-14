@@ -191,9 +191,9 @@ body {
 }
 
 .slider-text h1 {
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'PS Commons Bold';
-  font-weight: 300px;
+  font-weight: 600px;
   line-height: 100%;
   text-transform: none;
 }
@@ -206,7 +206,7 @@ body {
   font-size: 15px;
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
-  color: #858585;
+  color: white;
   
 
 
