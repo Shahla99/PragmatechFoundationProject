@@ -40,6 +40,13 @@
 
 =======
 >>>>>>> 251ba4d3597483015ea2e6fe50f13e9728e57a6d
+>>>>>>> 
+# Python 
+
+ 1. List,Tuple,Dict data növləri
+ -Lists və tuples obyektlərin sıralanmış ardıcıllığıdır. Tuple dəyişdirilə biməz ancaq listlər dəyişdirilə bilər. 
+Listlərın bir neçə metodu var, bunlar arasında append () və extend () metodları var.append() metodu siyahını sonuna bir obyekt əlavə edir  daha sonra yenilənə bilən obyektin hər bir elementini  siyahının sonuna əlavə edir. 
+ 
 
 
  # Python 
