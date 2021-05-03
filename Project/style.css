@@ -122,6 +122,7 @@ body {
     height: 50px;
     min-width: 80px;
     position: relative;
+    color: white;
 }
 .form-control.search-control {
   background: url(http://milansavov.com/img/zoom.svg) no-repeat right 11px center / 25px;
