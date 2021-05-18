@@ -1,0 +1,255 @@
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #left {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary-color);
+  }
+  
+  #left{
+    flex:1;
+  
+  }
+  
+  #right {
+    flex: 1;
+  }
+  
+  #signin{
+    background: var(--primary-color);
+    height: 340px;
+    width: 80%;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+  #signin .form {
+    display: flex;
+    padding: 19px;
+    margin-top: 0rem;
+     width: 80%;
+    padding-bottom: 2rem;
+  }
+  
+  #signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  #signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 10px;
+    line-height: 1.3rem;
+  }
+  
+  #signin .primary-btn {
+    width: 100%;
+  }
+  .primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #0074ab;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  #signin .logo img {
+    padding: 10px;
+    width: 230px;
+    max-width: 80%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 70px;
+    top:25px;
+  }
+  
+  #signin .links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  #signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+  }
+  
+  #signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+  }
+  
+  #signin .or span {
+    color: #ccc;
+    padding: 0 0.8rem;
+  }
+  #register{
+    background: var(--primary-color);
+    height: 450px;
+    width: 80%;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    padding-bottom: 12px;
+  }
+  #register .form {
+    display: block;
+     width: 80%;
+    padding-bottom: 2rem;
+  }
+  
+  #register label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  #register .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+  }
+  
+  #register .primary-btn2 {
+    width: 100%;
+  }
+  .primary-btn2 {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #F05A28;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  #register .logo img {
+    padding: 20px;
+    width: 230px;
+    max-width: 80%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 70px;
+    top:10px;
+  }
+  
+  /* Showcase */
+    #showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Project/img/bg-gtm-2020.png');
+    height: 100vh;
+    text-align: center;
+    background:var(--primary-color);
+  }
+  
+  
+  #showcase .secondary-btn {
+    width: 60%;
+    margin: auto;
+  }
+  
+  
+  .secondary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background:  linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+  
+  }
+  .secondary-btn:hover {
+    background:#EC008C;
+    color:white;
+  
+  }
+  
+  
+  
+  /* Media Queries */
+  @media (min-width: 1200px) {
+    #left {
+      flex: 4;
+    }
+  
+    #right {
+      flex: 6;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      overflow: auto;
+    }
+  
+    #right {
+      display: none;
+    }
+  
+    #left {
+      justify-content: start;
+      margin-top: 4vh;
+    }
+  
+    #signin .logo {
+      margin-bottom: 2vh;
+    }
+  
+    #signin .text-input {
+      margin-bottom: 0.7rem;
+    }
+  
+    #main-footer {
+      padding-top: 1rem;
+    }
+  }
+  
+  
+ 

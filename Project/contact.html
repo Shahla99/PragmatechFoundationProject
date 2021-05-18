@@ -5,62 +5,89 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/course.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
 	<title>Code for future</title>
 </head>
 <body>
-	<!--NAVBAR-->
+<!--NAVBAR-->
 	<div class="navbar">
 			<h1 class="nav-logo"><img src="../Project/img/navlogo.png"></h1>
-			<nav>
+			<nav id="navigation">
 				<ul>
-                    <li><a href="index.html">Ana səhifə</a></li>
+                    <li><a href="#">Ana səhifə</a></li>
                     <li><a href="beginners.html">Yeni başlayanlar</a></li>
                     <li><a href="pro.html">PRO</a></li>
 					<li><a href="camps.html">Düşərgələr</a></li>
 					<div class="button">
-						<li><a href="login.html">Daxil ol</a></li>
-						</div>
+					<li><a href="login.html">Daxil ol</a></li>
+					</div>
 					</ul>
-					<form class="search-form">
-						<div class="input-group search-group">
-							<input type="text" class="form-control search-control" placeholder="Search">
-							<i class="fas fa-search"></i>
-						</div>
-					</form>  
+                </ul>
+
+				<form class="search-form">
+					<div class="input-group search-group">
+					<input type="text" name="search" placeholder="Axtar..">
+					<i class="fas fa-search"></i>
+					</div>
+				</form>  
 			</nav>
             </div>
 
-            <section id="courses">
-				<div class="container grid">
-					<div class="course-item">
-					<div class="course-text">
-                        <h1>Düşərgələr(yaş 7-15)</h1>
-                        <p>Düşərgəçilər, hər kəs üçün proqramlaşdırma öyrənməyi asanlaşdıran “Scratch” adlı blok <br>
-						əsaslı bir proqramlaşdırma vasitəsi ilə maraqlı kompüter proqramı dünyasına dalacaqlar!<br>
-						Bu düşərgələr ya kodlaşdırmaya sürətli maraq yaratmaq, <br>
-						ya da ən çox maraqlanan tələbələrlə dərin bir dalış etmək üçün əla bir yoldur.<br>
-					</p>
-					<a href="#" class="button4">Get Started</a>
-						</div>
-			 
 
-			</section>
-			
-			<!-- Learning -->
-			<div id="learning">
-				<div class="course-highlight" class="columns large-12">
-					<h3>What You Will Learn</h3> 
-					<ul> 
-						<li>
-	                       In this path, you will learn the beginning fundamentals of Salesforce administration. 
-							Topics include Organization configuration, user management, security, reports and dashboards, and workflows.
-						</li>
-					</ul>
-	       </div>
-			</div>
-               <!--footer-->
+<!--contact section-->
+<section class="contact">
+<div class="content">
+<h2>Əlaqə</h2>
+</div>
+<div class="container">
+<div class="contactInfo">
+<div class="box">
+<div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+<div class="title">
+<h3>Telefon</h3>
+<p>070-777-77-77</p>
+</div>
+</div>
+<div class="box">
+<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+<div class="title">
+<h3>E-Poçt</h3>
+<p>sehla066@gmail.com</p>
+</div>
+</div>
+</div>
+<div class="contact-form">
+<form>
+<h2> Təklif, irad və rəylərinizi bizə bildirin</h2> 
+<div class="inputbox">
+<input type="text" name="" required="required">
+<span>Ad</span>
+</div>
+<div class="inputbox">
+<input type="text" name="" required="required">
+<span>Soyad</span>
+</div>
+<div class="inputbox">
+<input type="text" name="" required="required">
+<span>E-poçt</span>
+</div>
+<div class="inputbox">
+<textarea required="required"></textarea>
+<span>Rəyinizi buraya yazın</span>
+</div>
+<div class="inputbox">
+<input type="submit" name="" value="Göndər">
+</form>
+</div>
+</div>
+</section>
+<!--contact section end-->
+
+  <!--footer-->
                                <footer class="footer">
                                <div class="ftr-container">
 								<div class="row">
@@ -82,7 +109,7 @@
 
 										<div class="footer-col">
 											<ul>
-											<li><a href="#">Əlaqə</a></li>
+											<li><a href="contact.html">Əlaqə</a></li>
 						                    <li><a href="#">Dəstək</a></li>
 											</ul>
 										</div>
@@ -99,4 +126,5 @@
 							   </footer>
 							   <script type="text/javascript" src="../Project/js/app.js"></script>
 						        </body>
-                                </html> 
+                                </html>            
+                            

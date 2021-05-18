@@ -6,3 +6,4 @@ from flask import render_template,request,redirect
 def main_index():
     slides=Slider.query.all()
     return render_template('main/index.html',slides=slides)
+    
