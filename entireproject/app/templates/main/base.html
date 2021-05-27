@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/main/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400display=swap" rel="stylesheet">
+	<title>Code for future</title>
+</head>
+<body>
+	<!--Start navbar-->
+	<div class="navbar">
+			<h1 class="nav-logo"><img src="..static/main/img/navlogo.png"></h1>
+			<nav id="navigation">
+				<ul>
+                    <li><a href="/">Ana səhifə</a></li>
+                    <li><a href="/beginners">Yeni başlayanlar</a></li>
+                    <li><a href="/pro">PRO</a></li>
+					<li><a href="/camps">Düşərgələr</a></li>
+					<div class="button">
+					<li><a href="/login">Daxil ol</a></li>
+					</div>
+					</ul>
+                </ul>
+
+				<form class="search-form">
+					<div class="input-group search-group">
+					<input type="text" name="search" placeholder="Axtar..">
+					<i class="fas fa-search"></i>
+					</div>
+				</form>  
+			</nav>
+            </div> 
+
+<!--End navbar-->
+
+  {% block content %} {% endblock content %}
+
+ <!--Start footer-->
+                               <footer class="footer">
+                               <div class="ftr-container">
+								<div class="row">
+                                <div class="footer-col">
+											<ul>
+												<li><a href="/about">Haqqımızda</a></li>
+
+											</ul>
+										</div>
+                                        <div class="footer-col">
+											<ul>
+											<li><a href="/gallery">Media</a></li>
+											</ul>
+										</div>
+
+										<div class="footer-col">
+											<ul>
+											<li><a href="/contact">Əlaqə</a></li>
+											</ul>
+										</div>
+
+										<div class="footer-col">
+										<div class="social-links">
+											<a href="#"><i class="fab fa-facebook-f"></i></a>
+											<a href="#"><i class="fab fa-twitter"></i></a>
+											<a href="#"><i class="fab fa-instagram"></i></a>
+											<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							   </div>
+							   </div>
+								</div>
+								</div>  
+							   </footer>
+                               <!--End footer-->
+							   <script type="text/javascript" src="static/main/js/app.js"></script>
+						        </body>
+                                </html>            
+                            

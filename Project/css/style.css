@@ -73,7 +73,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
  }
-
+ .navbar ul li a:hover{
+  color: #ec008c;
+	padding-left: 4px;
+ }
  .navbar .nav-logo {
   float: left;
   width: 230px;
@@ -471,7 +474,7 @@ input[type=text]:focus {
 
 /* ABOUT */
 .about{
-  background: url(../img/cff.jpg) no-repeat left;
+  background: url(../img/8.jpg) no-repeat left;
   background-size: 50%;
   background-color: #222222;
   overflow: hidden;
@@ -516,9 +519,9 @@ input[type=text]:focus {
 
 /* Gallery */
 .gallery {
-  height: 600px;
+  height: 900px;
   width: 100%;
-  background: var(--primary-color);
+  background:var(--primary-color);
   margin: 30px 0px;
   margin-bottom: 0px;
   padding: 40px;
@@ -661,7 +664,7 @@ ul{
 	list-style: none;
 }
 .footer{
-  height:180px;
+  height:140px;
   background-color: #222;
   color: #fff;
   text-decoration: none;
@@ -671,7 +674,7 @@ ul{
 .footer-col{
    width: 20%;
    padding: 5px 10px;
-   margin-top: 40px;
+   margin-top: 55px;
 }
 
 
@@ -688,15 +691,14 @@ ul{
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
+	color: #ec008c;
+	padding-left: 4px;
 }
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
@@ -712,7 +714,7 @@ ul{
 
 .footer-col .social-links a:hover{
 	color: #24262b;
-	background-color: #ffffff;
+	background-color: #ec008c;
 }
 
 

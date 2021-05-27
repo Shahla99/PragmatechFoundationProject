@@ -4,10 +4,10 @@
 <h4 class="my-2">Add New Slide</h4>
 
 <form action="{{url_for('admin_slider')}}" method='POST' enctype="multipart/form-data">
-    <input type="text" class="form-control my-2" name='s_title' placeholder="Slide Title">
-    <input type="text" class="form-control my-2" name='s_text' placeholder="Slide Text">
-    <input type="text" class="form-control my-2" name='s_url' placeholder="Slide URL">
-    <input type="file" class="form-control my-2" name='s_image'>
+    <input type="text" class="form-control my-2" name='slider_title' placeholder="Slide Title">
+    <input type="text" class="form-control my-2" name='slider_text' placeholder="Slide Text">
+    <input type="text" class="form-control my-2" name='slider_url' placeholder="Slide URL">
+    <input type="file" class="form-control my-2" name='slider_photo'>
     <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Slide'>
 </form>
 
@@ -24,12 +24,12 @@
     <tbody>
         {% for slide in slides %}
         <tr>
-            <td scope="row">{{slide.s_title}}</td>
-            <td>{{slide.s_header}}</td>
-            <td>{{slide.s_url}}</td>
+            <td scope="row">{{slide.slider_title}}</td>
+            <td>{{slide.slider_text}}</td>
+            <td>{{slide.slider_url}}</td>
             <td>
-                <a href="">Delete</a>
-                <a href="">Update</a>
+                <a href="/admin/slider/delete/">Delete</a>
+                <a href="/admin/slider/update/">Update</a>
             </td>
         </tr>
         {% endfor %}

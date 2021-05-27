@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="static/main/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400display=swap" rel="stylesheet">
-	<title>Code for future</title>
-</head>
-<body>
-	<!--NAVBAR-->
-	<div class="navbar">
-			<h1 class="nav-logo"><img src="static/main/img/navlogo.png"></h1>
-			<nav id="navigation">
-				<ul>
-                    <li><a href="index.html">Ana səhifə</a></li>
-                    <li><a href="beginners.html">Yeni başlayanlar</a></li>
-                    <li><a href="pro.html">PRO</a></li>
-					<li><a href="camps.html">Düşərgələr</a></li>
-					<div class="button">
-					<li><a href="login.html">Daxil ol</a></li>
-					</div>
-					</ul>
-                </ul>
-
-				<form class="search-form">
-					<div class="input-group search-group">
-					<input type="text" name="search" placeholder="Axtar..">
-					<i class="fas fa-search"></i>
-					</div>
-				</form>  
-			</nav>
-            </div> 
-
+{% extends 'main/base.html' %} {% block content %}
 
 			<!--Slider section  -->
             <section id="slider">
@@ -65,48 +27,48 @@
 				  </div>
 			</section>
 
-			<!-- Path section -->
-          <section id="path">
-			<div class="path-row">
-				<div class="path-container">
-				<div class="path-items">
-				<div class="col">Path
+			<!-- Lesson section -->
+          <section id="lesson">
+			<div class="lesson-row">
+				<div class="lesson-container">
+				<div class="lessson-items">
+				<div class="col">lesson
 				<p>Javascript</p> 
-				<div class="path-courses">
+				<div class="lesson-courses">
 					<span>5</span>
 					Kurs
 				</div>
-				<a href="js.html">
-				<img class="path-icon" src="static/main/img/js.png"> </a>
+				<a href="/js">
+				<img class="lesson-icon" src="static/main/img/js.png"> </a>
 	            </div>
-				<div class="col">Path
+				<div class="col">lesson
 					<p>Angular</p> 
-					<div class="path-courses">
+					<div class="lesson-courses">
 						<span>7</span>
 						Kurs
 					</div>
-					<a href="angular.html">
-					<img class="path-icon" src="static/main/img/angular.png"> </a>
+					<a href="/angular">
+					<img class="lesson-icon" src="static/main/img/angular.png"> </a>
 				</div>
-				<div class="col">Path
+				<div class="col">lesson
 					<p>Core Python</p>
-					<div class="path-courses">
+					<div class="lesson-courses">
 						<span>11</span>
 						Kurs
 					</div>
-					<a href="python.html">
-					<img class="path-icon" src="static/main/img/python.png"></a>
+					<a href="/python">
+					<img class="lesson-icon" src="static/main/img/python.png"></a>
 				</div>
-				<div class="col">Path
+				<div class="col">lesson
 					<p>C#</p> 
-					<div class="path-courses">
+					<div class="lesson-courses">
 						<span>12</span>
 						Kurs
 					</div>
-					<a href="csharp.html">
-					<img class="path-icon" src="static/main/img/csharp.png"></a>
+					<a href="/c#">
+					<img class="lesson-icon" src="static/main/img/csharp.png"></a>
 				</div>
-                     <div class="path-text">
+                     <div class="lesson-text">
 						<div class="title-section">
 							 <h5 class="pink-title">TREND TEXNOLOGİYALARI</h5>
 							 <p class="white-title"> İndi öyrənmək üçün <br class="text">
@@ -212,53 +174,8 @@
 				</div>
 				</div>
 			</section>
-			 <!--footer-->
-                               <footer class="footer">
-                               <div class="ftr-container">
-								<div class="row">
-                                <div class="footer-col">
-											<ul>
-												<li><a href="about.html">Haqqımızda</a></li>
-												<li><a href="gallery.html">Media</a></li>
-												<li><a href="#">Komandamız</a></li>
-
-											</ul>
-										</div>
-
-										<div class="footer-col">
-											<ul>
-												<li><a href="#">Bloq</a></li>
-												<li><a href="#">Karyera</a></li>
-												<li><a href="#">Tövsiyə</a></li>
-											</ul>
-										</div>
-
-										<div class="footer-col">
-											<ul>
-												<li><a href="#">Məsuliyyət</a></li>
-												<li><a href="#">Xidmətlər</a></li>
-												<li><a href="#">Təhlükəsizlik</a></li>
-											</ul>
-										</div>
-
-										<div class="footer-col">
-											<ul>
-											<li><a href="#">Əlaqə</a></li>
-						                    <li><a href="#">Dəstək</a></li>
-						                    <li><a href="#">FAQ</a></li>
-											</ul>
-										</div>
-										<div class="footer-col">
-										<div class="social-links">
-											<a href="#"><i class="fab fa-facebook-f"></i></a>
-											<a href="#"><i class="fab fa-twitter"></i></a>
-											<a href="#"><i class="fab fa-instagram"></i></a>
-											<a href="#"><i class="fab fa-linkedin-in"></i></a>
-							   </div>
-							   </div>
-								</div>
-								</div>  
-							   </footer>
-							   <script src="static/main/js/app.js"></script>
+							    <script src="static/main/js/app.js"></script>
 						        </body>
                                 </html> 
+
+                            {% endblock %}
