@@ -1,0 +1,42 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Contact Page</h3>
+
+<h4 class="my-2">Add New Content</h4>
+
+<form action="{{url_for('admin_contact')}}" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='contact_icon' placeholder="contact icon">
+    <input type="text" class="form-control my-2" name='contact_phone' placeholder="contact phone">
+    <input type="text" class="form-control my-2" name='contact_email' placeholder="contact email">
+    <input type="text" class="form-control my-2" name='contact_title' placeholder="contact title">
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New'>
+</form>
+<h4 class="my-2">All Contacts</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>contact icon</th>
+            <th>contact phone</th>
+            <th>contact email</th>
+            <th>contact title</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for contact in contacts %}
+        <tr>
+            <td scope="row">{{contact.contact_icon}}</td>
+            <td>{{contact.contact_phone}}</td>
+            <td>{{contact.contact_title}}</td>
+            <td>{{contact.contact_email}}</td>
+
+            <td>
+                <a href="/admin/contact/delete/">Delete</a>
+                <a href="/admin/contact/update/">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+

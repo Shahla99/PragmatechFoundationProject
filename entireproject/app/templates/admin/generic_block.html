@@ -1,0 +1,37 @@
+% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">generic_block Page</h3>
+
+<h4 class="my-2">Add New </h4>
+
+<form action="{{url_for('admin_generic_block')}}" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='generic_title' placeholder="generic title">
+    <input type="text" class="form-control my-2" name='generic_text' placeholder="generic Text">
+    <input type="file" class="form-control my-2" name='generic_image'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New '>
+</form>
+<h4 class="my-2">All generic_blocks</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>generic_block title</th>
+            <th>generic_block text</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for generic_block in generic_blocks %}
+        <tr>
+            <td scope="row">{{generic_block.generic_title}}</td
+            <td>{{generic_block.generic_text}}</td>
+
+            <td>
+                <a href="/admin/generic_block/delete/">Delete</a>
+                <a href="/admin/generic_block/update/">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+

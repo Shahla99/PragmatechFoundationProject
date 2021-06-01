@@ -1,0 +1,35 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">column_control Page</h3>
+
+<h4 class="my-2">Add New Content</h4>
+
+<form action="{{url_for('admin_column_control')}}" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='column_header' placeholder="column  header">
+    <input type="text" class="form-control my-2" name='column_text' placeholder="column text">
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Column'>
+</form>
+<h4 class="my-2">All column_control</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>column header</th>
+            <th>column text</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for column_control in column_controls %}
+        <tr>
+            <td scope="row">{{column_control.column_control_header}}</td>
+            <td>{{column_control.column_control_text}}</td>
+             <td>
+                <a href="/admin/column_control/delete/">Delete</a>
+                <a href="/admin/column_control/update/">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+

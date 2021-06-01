@@ -1,0 +1,30 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h4 class="my-2">All Contact Comments</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for comment in comments %}
+        <tr>
+            <td scope="row">{{comment.c_name}}</td>
+            <td>{{comment.c_surname}}</td>
+            <td>{{comment.c_email}}</td>
+            <td>{{comment.c_message}}</td>
+
+            <td> 
+                <a href="/admin/contact/comment/delete/">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+

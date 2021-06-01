@@ -1,0 +1,38 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">About Page</h3>
+
+<h4 class="my-2">Add New </h4>
+
+<form action="{{url_for('admin_about')}}" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='about_header' placeholder="about header">
+    <input type="text" class="form-control my-2" name='about_text' placeholder="about Text">
+    <input type="file" class="form-control my-2" name='about_image'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New about'>
+</form>
+<h4 class="my-2">All abouts</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>about header</th>
+            <th>about text</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for about in abouts %}
+        <tr>
+            <td scope="row">{{about.about_header}}</td>
+            <td>{{about.about_text}}</td>
+            
+
+            <td>
+                <a href="/admin/about/delete/">Delete</a>
+                <a href="/admin/about/update/">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+

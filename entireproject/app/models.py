@@ -6,13 +6,14 @@ class Slider(db.Model):
     slider_text=db.Column(db.String(50))
     slider_url=db.Column(db.String(50))
     slider_photo=db.Column(db.String(50))
-    images=db.relationship('sliderimage',backref='slider')
-    
+    slider_images=db.relationship('Sliderimage',backref='Slider')
+     
 
 class Sliderimage(db.Model):
     id = db.Column(db.Integer,primary_key=True)
     img_src=db.Column(db.String(50))
-    slider_id=db.Column(db.Integer, db.ForeignKey('slider_id'),nullable=False)
+    slider_id=db.Column(db.Integer, db.ForeignKey('Slider.id'),nullable=False)
+    
 
 
 class Lesson(db.Model):
@@ -23,7 +24,8 @@ class Lesson(db.Model):
     lesson_content=db.Column(db.String(50))
     lesson_logo=db.Column(db.String(50)) 
     lesson_details=db.Column(db.String(100))
-    languages=db.relationship('Language',backref='lesson') 
+    languages=db.relationship('Language',backref='Lesson') 
+    
     
 
 class Language(db.Model):
@@ -32,16 +34,14 @@ class Language(db.Model):
     language_text=db.Column(db.String(50))
     language_image=db.Column(db.String(100))
     language_content=db.Column(db.String(50))
-    lesson_id=db.Column(db.Integer, db.ForeignKey('lesson_id'),nullable=False)
-
+    lesson_id=db.Column(db.Integer, db.ForeignKey('Lesson.id'),nullable=False)
+   
   
 class column_control(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     column_header=db.Column(db.String(50))
-    column_title=db.Column(db.String(50))
-    column_text=db.Column(db.String(50)) 
-    column_logo=db.Column(db.String(100)) 
-    
+    column_text=db.Column(db.String(100)) 
+
 
 class generic_block(db.Model):
     id=db.Column(db.Integer,primary_key=True)
@@ -54,13 +54,13 @@ class social_media(db.Model):
     social_icon=db.Column(db.String(50))
     social_url=db.Column(db.String(100))
 
-class Beginners(db.Model):
+class Beginner(db.Model):
     id=db.Column(db.Integer,primary_key=True)
-    beginners_title=db.Column(db.String(50))
-    beginners_info=db.Column(db.String(100))
-    beginners_image=db.Column(db.String(50)) 
-    beginners_details=db.Column(db.String(50)) 
-    beginners_link=db.Column(db.String(50)) 
+    beginner_title=db.Column(db.String(50))
+    beginner_info=db.Column(db.String(100))
+    beginner_image=db.Column(db.String(50)) 
+    beginner_details=db.Column(db.String(50)) 
+    beginner_link=db.Column(db.String(50)) 
 
 class Pro(db.Model):
     id=db.Column(db.Integer,primary_key=True)
@@ -78,22 +78,24 @@ class Camps(db.Model):
     camps_details=db.Column(db.String(50)) 
     camps_link=db.Column(db.String(50)) 
 
-class about(db.Model):
+class About(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     about_image=db.Column(db.String(50))
     about_header=db.Column(db.String(50))
     about_text=db.Column(db.String(50))
 
-class gallery(db.Model):
+class Gallery(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     gallery_photo=db.Column(db.String(50))
-    gallerys=db.relationship('galleryimage',backref='gallery')
+    gallerys=db.relationship('galleryimage',backref='Gallery')
+
+   
 
 class galleryimage(db.Model):
     id = db.Column(db.Integer,primary_key=True)
     img_src=db.Column(db.String(50))
-    gallery_id=db.Column(db.Integer, db.ForeignKey('gallery_id'),nullable=False)
-
+    gallery_id=db.Column(db.Integer, db.ForeignKey('Gallery.id'),nullable=False)
+   
 class User(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     username=db.Column(db.String(50))
@@ -101,3 +103,18 @@ class User(db.Model):
     email=db.Column(db.String(50))
     fullname=db.Column(db.String(100))
 
+class Contact(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    contact_icon=db.Column(db.String(50))
+    contact_phone=db.Column(db.String(50))
+    contact_email=db.Column(db.String(50))
+    contact_title=db.Column(db.String(50))
+    comments=db.relationship('Comment',backref='Contact')
+
+class Comment(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    c_name=db.Column(db.String(50))
+    c_surname=db.Column(db.String(50))
+    c_email=db.Column(db.String(50))
+    c_message=db.Column(db.String(50))
+    contact_id=db.Column(db.Integer, db.ForeignKey('Contact.id'),nullable=False)

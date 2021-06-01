@@ -4,10 +4,9 @@
 <h4 class="my-2">Add New Lesson</h4>
 
 <form action="{{url_for('admin_lesson')}}" method='POST' enctype="multipart/form-data">
-    <input type="text" class="form-control my-2" name='lesson_name' placeholder="Lesson Title">
+    <input type="text" class="form-control my-2" name='lesson_name' placeholder="Lesson Name">
     <input type="text" class="form-control my-2" name='lesson_text' placeholder="Lesson Text">
     <input type="text" class="form-control my-2" name='lesson_url' placeholder="Lesson URL">
-    <input type="text" class="form-control my-2" name='lesson_content' placeholder="Lesson Content">
     <input type="text" class="form-control my-2" name='lesson_details' placeholder="Lesson Details">
     <input type="file" class="form-control my-2" name='lesson_logo'>
     <input type="submit" class="btn btn-primary px-2 my-2" value='Add New Lesson'>
@@ -20,7 +19,6 @@
             <th>Lesson title</th>
             <th>Lesson text</th>
             <th>Lesson URL</th>
-            <th>Lesson content</th>
             <th>Lesson Details</th>
         </tr>
     </thead>
@@ -30,7 +28,6 @@
             <td scope="row">{{lesson.lesson_title}}</td>
             <td>{{lesson.lesson_text}}</td>
             <td>{{lesson.lesson_url}}</td>
-            <td>{{lesson.lesson_content}}</td>
             <td>{{lesson.lesson_details}}</td>
 
             <td>
@@ -41,4 +38,6 @@
         {% endfor %}
 
     </tbody>
+    </table>
+{% endblock %}
 

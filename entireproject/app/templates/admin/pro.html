@@ -1,0 +1,43 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Pro Page</h3>
+
+<h4 class="my-2">Add New Content</h4>
+
+<form action="{{url_for('admin_pro')}}" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='pro_title' placeholder="pro Title">
+    <input type="text" class="form-control my-2" name='pro_info' placeholder="pro Info">
+    <input type="text" class="form-control my-2" name='pro_details' placeholder="pro Details">
+    <input type="text" class="form-control my-2" name='pro_link' placeholder="pro link">
+    <input type="file" class="form-control my-2" name='pro_image'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New'>
+</form>
+<h4 class="my-2">All </h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>pro title</th>
+            <th>pro info</th>
+            <th>pro Details</th>
+            <th>pro link</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pro in pros %}
+        <tr>
+            <td scope="row">{{pro.pro_title}}</td>
+            <td>{{pro.pro_info}}</td>
+            <td>{{pro.pro_link}}</td>
+            <td>{{pro.pro_details}}</td>
+
+            <td>
+                <a href="/admin/pro/delete/">Delete</a>
+                <a href="/admin/pro/update/">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+

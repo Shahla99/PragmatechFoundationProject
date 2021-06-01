@@ -1,0 +1,43 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">Beginners Page</h3>
+
+<h4 class="my-2">Add New Content</h4>
+
+<form action="{{url_for('admin_beginners')}}" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='beginners_title' placeholder="Beginners Title">
+    <input type="text" class="form-control my-2" name='beginners_info' placeholder="beginners Info">
+    <input type="text" class="form-control my-2" name='beginners_details' placeholder="beginners Details">
+    <input type="text" class="form-control my-2" name='beginners_link' placeholder="beginners link">
+    <input type="file" class="form-control my-2" name='beginners_image'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New'>
+</form>
+<h4 class="my-2">All Beginners</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>beginners title</th>
+            <th>beginners info</th>
+            <th>beginners Details</th>
+            <th>beginners link</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for beginners in beginnerss %}
+        <tr>
+            <td scope="row">{{beginners.beginners_title}}</td>
+            <td>{{beginners.beginners_info}}</td>
+            <td>{{beginners.beginners_link}}</td>
+            <td>{{beginners.beginners_details}}</td>
+
+            <td>
+                <a href="/admin/beginners/delete/">Delete</a>
+                <a href="/admin/beginners/update/">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+

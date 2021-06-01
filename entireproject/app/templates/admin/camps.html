@@ -1,0 +1,43 @@
+{% extends 'admin/base.html' %} {% block content %}
+<h3 class="my-2">camps Page</h3>
+
+<h4 class="my-2">Add New Camp</h4>
+
+<form action="{{url_for('admin_camps')}}" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name='camps_title' placeholder="camps Title">
+    <input type="text" class="form-control my-2" name='camps_info' placeholder="camps Info">
+    <input type="text" class="form-control my-2" name='camps_details' placeholder="camps Details">
+    <input type="text" class="form-control my-2" name='camps_link' placeholder="camps link">
+    <input type="file" class="form-control my-2" name='camps_image'>
+    <input type="submit" class="btn btn-primary px-2 my-2" value='Add New'>
+</form>
+<h4 class="my-2">All Camps</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>camps title</th>
+            <th>camps info</th>
+            <th>camps Details</th>
+            <th>camps link</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for camp in camps %}
+        <tr>
+            <td scope="row">{{camps.camps_title}}</td>
+            <td>{{camps.camps_info}}</td>
+            <td>{{camps.camps_link}}</td>
+            <td>{{camps.camps_details}}</td>
+
+            <td>
+                <a href="/admin/camps/delete/">Delete</a>
+                <a href="/admin/camps/update/">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
+{% endblock %}
+
